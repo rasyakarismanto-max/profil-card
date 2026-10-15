@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur halaman */
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #365777;
+}
+
+/* Kotak profil */
+.kartu {
+    width: 350px;
+    padding: 30px;
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+/* Sekat antara nama dan pelajar */
+#nama {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#pelajar {
+    margin-top: 0;
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+/* Foto profil */
+.foto {
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 2px solid rgba(17, 0, 255, 0.436);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+
+    margin-bottom: 20px;
+}
+
+.foto:hover {
+    transform: scale(1.07);
+    transition: 1s ease;
+}
+
+/* Nama profil */
+#nama {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/* Tulisan Welcome */
+#sapaan {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #a5f3fc;
+}
+
+/* Video latar belakang */
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* lapisan gelap */
+.gelap {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+
+    z-index: -1;
+}
+
+/* Posisi teks sosmed */
+.sosmed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* Tampilan teks sosmed */
+.sosmed a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Garis pemisah */
+
+.sosmed a + a::before {
+    content: "|";
+    color: rgba(255, 255, 255, 0.4);
+    margin-right: 12px;
+}
+
+/* Efek gerak halus */
+.sosmed a:hover {
+    color: #67e8f96c;
+    transform: translateY(-2px);
+}
+
+/* Setiap baris bio data */
+.biodata {
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.biodata p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #d1d5db;
+}
+
+/* Ikon bio data */
+.biodata span {
+    width: 22px;
+    color: #67e8f9;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.biodata a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease, transfrom 0.3s ease;
+}
+
+.biodata a:hover {
+    color: #67e8f96c;
+    transform: translateY(-2px);
+}
+
+
+.bawah {
+    margin-top: 18px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.65);
+}
